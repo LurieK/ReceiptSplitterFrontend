@@ -3,10 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "android": "REACT_NATIVE_PACKAGER_CACHE_DISABLED=true react-native run-android",
+    "ios": "REACT_NATIVE_PACKAGER_CACHE_DISABLED=true react-native run-ios",
     "lint": "eslint .",
-    "start": "react-native start",
+    "start": "REACT_NATIVE_PACKAGER_CACHE_DISABLED=true react-native start",
+    "start-clean": "REACT_NATIVE_PACKAGER_CACHE_DISABLED=true react-native start --reset-cache",
     "test": "jest"
   },
   "dependencies": {
